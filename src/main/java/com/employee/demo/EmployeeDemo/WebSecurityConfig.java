@@ -35,9 +35,9 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 	  @Autowired public void configure(AuthenticationManagerBuilder
 	  authenticationMgr) throws Exception {
 	  authenticationMgr.inMemoryAuthentication()
-	  .withUser("bhushanvyas@cdnsol.com").password("{noop}cdn0050").authorities(
+	  .withUser("bhushanvyas").password("{noop}password").authorities(
 	  "ROLE_USER") .and()
-	  .withUser("admin@cdnsol.com").password("{noop}cdn123").authorities("ROLE_USER",
+	  .withUser("admin").password("{noop}password").authorities("ROLE_USER",
 	  "ROLE_ADMIN");
 	  
 	  }
